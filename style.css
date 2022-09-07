@@ -1,0 +1,259 @@
+/* GENERAL SETTINGS */
+:root{
+    accent-color: white;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+body{
+    background: url(images/image-lion-background.png) center -150px no-repeat,
+                linear-gradient(#FC5E55,#FA4083);
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+}
+body > *{
+    width: 1024px;
+    margin: auto;
+}
+form *{
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Playfair Display', serif;
+}
+h1{
+    font-size: 4rem;
+    margin: 2.4rem 0;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+h2{
+    font-size: 2.4rem;
+    margin: 1.5rem 0;
+}
+p{
+    line-height: 2rem;
+    margin-bottom: 8px;
+}
+.mybutton{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #FC5E55;
+    background-color: white;
+    padding: 0.8rem 2.4rem;
+    display: inline-block;
+    margin: 16px 0px;
+    border-radius: 2px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+.mybutton:hover{
+    background-color: rgb(54, 235, 168);
+    transition-duration: 0.5s;
+}
+
+/* ========================================================================== */
+/* HEADER */
+
+
+header{
+    min-height: 70px;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.5);
+}
+
+/* Navigation Menu */
+nav .navbutton{
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid white;
+    color: white;
+    box-shadow: 0px 0px 0px;
+}
+nav .mybutton{
+    margin: 0px;
+}
+nav{
+    display: flex;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 8px;
+    position: relative;
+}
+.dropdown{
+    display: none;
+}
+.menu:hover .dropdown{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    width: 180px;
+    top: 3.4rem;
+}
+.links{
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+}
+.navspacer{
+    height: 4px;
+}
+.dropdown a{
+    width: 100%;
+    box-shadow: 0px 0px 0px;
+    border-radius: 0px;
+}
+.dropdown a:nth-of-type(1){border-radius: 2px 2px 0px 0px;}
+.dropdown a:last-of-type{border-radius: 0px 0px 2px 2px;}
+.menu>a:hover{
+    color: #FC5E55;
+}
+
+
+/* =========================================================================== */
+/* HOMEPAGE */
+
+/* HERO */
+#hero{
+    min-height: 150px;
+    padding: 50px 0px;
+    display: flex;
+    align-content: stretch;
+    align-items: center;
+}
+#hero-left{
+    flex-grow: 1;
+    padding: 0px 50px;
+}
+
+
+/* CARDS */
+#cards{
+    min-height: 260px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+#card1{background-image:url(images/image-background-card1.jpg);}
+#card2{background-image: url(images/image-background-card2.jpg);}
+#card3{background-image: url(images/image-background-card3.jpg);}
+#cards > *{
+    background-size: cover;
+    background-position: bottom;
+    flex-basis: 30%;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: darken;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+ }
+ #cards > *:hover{
+    background-color: rgba(0, 0, 0, 0);
+    transition-duration: 0.5s;
+ }
+ #cards > *:hover i{
+   opacity: 1;
+   transition-duration: 0.5s;
+ }
+#cards a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+#cards p{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+#cards i{
+    font-size: 60px;
+    margin-bottom: 8px;
+    opacity: 0.8;
+}
+
+/* TESTIMONIALS */
+#testimonials{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: -1.6rem;
+    padding-bottom: 50px;
+}
+.tbox{
+    border: 1px solid white;
+    padding: 50px;
+    width: 497px;
+    margin: 1.6rem 0px;
+}
+
+/* ======================================================================== */
+/* CONTACT US PAGE */
+
+#Contact-Us-Div{
+    margin: 72px 96px 48px;
+}
+#Contact-Us-Div p{
+    text-align: justify;
+}
+form{
+  margin: 2.4rem 0;
+}
+input[type="text"], input[type="email"], textarea{
+    width: 100%;
+    margin: 0.8rem 0;
+    padding: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    box-sizing: border-box;
+}
+.signup-div{
+    margin: 1.6rem 0px;
+}
+input[type="radio"], input[type="checkbox"]{
+    margin-right: 0.8rem;
+    width: 1.6rem;
+    height: 1.6rem;
+}
+input[type="radio"]{
+    appearance: none;
+    background-color: white;
+    border-radius: 100px;
+    font: inherit;
+    color: white;
+    border: 1px solid #936871;
+}
+input[type="radio"]:checked{
+    background-color: #3b3b3b;
+    border: 0.4rem solid white;
+}
+input[type="radio"]+label{
+    margin-right: 2.4rem;
+}
+label{
+    display: block;
+    margin-bottom: 0.8rem;
+}
+.options{
+    display: flex;
+    flex-direction: row;
+}
+.radio-option{
+    display: flex;
+}
+select{
+    margin: 0.8rem 0;
+    padding: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    width: 200px;
+}

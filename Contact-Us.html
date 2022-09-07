@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" id="index">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c83ab07549.js" crossorigin="anonymous"></script>
+    <title>Roar Bikes - Contact Us</title>
+    <meta name="description" content="Fast, convenient bike servicing with up-front pricing. All without the hassle of taking your bike into a shop.">
+</head>
+
+
+
+<body>
+
+    <header>
+     
+        <a href="index.html" class="logo">
+            <img src="images/logo-roar-bikes.svg" alt="Logo of Roar Bikes Services">
+        </a>
+
+        <nav>
+        
+            <div class="menu">
+                <a href="#" class="mybutton navbutton">Book Online</a>
+                <div class="dropdown">
+                    <div class="navspacer"></div>
+                    <div class="links">
+                        <a href="#" class="mybutton">Onsite Service</a>
+                        <a href="#" class="mybutton">Parts Delivery</a>
+                        <a href="#" class="mybutton">Request Callback</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="menu">
+                <a href="#" class="mybutton navbutton">About</a>
+            </div>
+        
+            <div class="menu">
+                <a href="Contact-Us.html" class="mybutton navbutton">Contact</a>
+            </div>
+        
+        </nav>
+
+    </header>
+
+
+    <main>
+
+    <div id="Contact-Us-Div">
+        <h1>Contact Us</h1>
+        <p>Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.</p>
+        
+        <form action="mail.php" method="post">
+
+            <input type="text" name="yourname" id="yourname" placeholder="Your Name">
+            <input type="email" name="youremail" id="youremail" placeholder="Your Email">
+            <textarea name="yourmessage" id="yourmessage" rows="6" placeholder="Your Message"></textarea>
+
+            <select name="county" id="county">
+                <option value="not-chosen">Choose County</option>
+                <option value="Limerick">Limerick</option>
+                <option value="Galway">Galway</option>
+                <option value="Dublin">Dublin</option>
+            </select>
+
+            <div class="signup-div">
+                <label for="signup">Sign up for our email newsletter</label>
+                <input type="checkbox" name="signup" id="signup" value="yes-sign-me-up" checked>
+            </div>
+                      
+            <div class="contact-method-div">
+                <p>Preferred contact method</p>
+                <div class="options">
+                    <div class="radio-option">
+                        <input type="radio" name="contact-method" id="btn-email" checked>
+                        <label for="btn-email">Email</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" name="contact-method" id="btn-phone">
+                        <label for="btn-phone">Phone</label>
+                    </div>
+                </div>
+            </div>
+
+           
+
+            <!-- <br>
+            <input type="color" name="color" id="color">
+            <br>
+            <input type="date" name="date" id="date">
+            <input type="time" name="time" id="time">
+
+            <br> -->
+
+            <input class="mybutton" type="submit" value="Send">
+
+            
+
+        </form>
+
+    </div>
+
+    <div id="cards">
+        <div id="card1">
+            <a href="#">
+                <i class="fa-solid fa-clock"></i>
+                <h2>Book Online</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, facilis! Accusantium nam aperiam, minus quo sapiente reprehenderit praesentium nesciunt.</p>
+            </a>
+        </div>
+        <div id="card2">
+            <a href="#">
+                <i class="fa-solid fa-toolbox"></i>
+                <h2>Service Types</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, facilis!</p>
+            </a>
+        </div>
+        <div id="card3">
+            <a href="">
+                <i class="fa-solid fa-phone"></i>
+                <h2>Call for Advice</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, facilis! Accusantium nam aperiam, minus quo sapiente reprehenderit praesentium nesciunt.</p>
+            </a>
+        </div>
+    </div>
+
+    
+    </main>
+
+
+</body>
+
+
+
+</html>
